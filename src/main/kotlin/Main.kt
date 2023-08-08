@@ -6,6 +6,8 @@ fun main(args: Array<String>) {
 
    // println(Task2(6))
 
+   //  println(Task3("Hello world",'H'))
+
 
 }
 
@@ -18,6 +20,17 @@ fun Task2(factorial : Int) : Int{
 
     for(i in 1..factorial){
         result *= i
+    }
+    return  result
+}
+
+fun Task3(Line : String,char: Char) : Int{
+    var result : Int = 0
+
+    for(i in 0 until Line.length){
+        if(Line[i] == char){
+            result++
+        }
     }
     return  result
 }
